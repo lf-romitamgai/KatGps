@@ -1,0 +1,62 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/searchLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="74dp"
+        android:layout_toLeftOf="@+id/here"
+        android:background="@android:drawable/picture_frame"
+        android:cursorVisible="false"
+        android:hint="Location"
+        android:singleLine="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp">
+    </AutoCompleteTextView>
+    
+
+    <ToggleButton
+        android:id="@+id/here"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/check"
+        android:textOff=""
+        android:textOn="" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/searchLocation"
+        android:layout_toLeftOf="@+id/here"
+       
+        android:text="Search" />
+
+    <ToggleButton
+        android:id="@+id/trace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/here"
+        android:layout_alignBottom="@+id/here"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:text="ToggleButton"
+        android:textOn="Trace On"
+        android:textOff="Trace Off" 
+        />
+
+   
+</RelativeLayout>

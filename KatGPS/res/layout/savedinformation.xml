@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvInformation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bgbg"
+        android:gravity="center"
+        android:text="Save Your Location"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Location name is..." />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInformation"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Name"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvName"
+        android:layout_below="@+id/etName"
+        android:layout_marginTop="19dp"
+        android:text="Enter Detail"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/etDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etName"
+        android:layout_below="@+id/tvDetail"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Details here.." />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDetail"
+        android:layout_centerHorizontal="true"
+        android:text="Take Photo" />
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/etDetail"
+        android:layout_below="@+id/button1"
+        android:layout_marginRight="16dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btCancel"
+        android:layout_alignBottom="@+id/btCancel"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/btCancel"
+        android:text="Save" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btCancel"
+        android:src="@drawable/marker" />
+
+</RelativeLayout>
